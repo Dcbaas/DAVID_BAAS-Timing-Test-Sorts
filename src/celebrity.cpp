@@ -42,7 +42,7 @@ bool & celebrity::operator <(celebrity &other){
   if(this->desperation != other->desperation)
     return this->desperation < other.desperation;
   else if(this->met != other.met)
-    return this->met;
+    return !this->met;
 
   return this->name < other.name;
 }
