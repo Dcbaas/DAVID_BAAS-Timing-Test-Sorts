@@ -1,5 +1,6 @@
-#include "sort.h"
+#include "sorts.h"
 #include "celebrity.h"
+#include <vector>
 
 celebrity celebrityBuilder();
 
@@ -7,7 +8,7 @@ int main(int argc, char** argv){
   int sortType{argv[0]};
   int elements{argv[1]};
 
-  vector<celebrity> celebrities;
+ std::vector<celebrity> celebrities;
 
   for(int i{0}; i < elements;++i)
     celebrities.push_back(celebrityBuilder());
@@ -25,13 +26,13 @@ int main(int argc, char** argv){
       insertion_sort(celebrities);
       return 0;
     
-    case 4;
-      merge_sort(celebrities);
+    case 4:
+      mergeSort(celebrities);
       return 0;
   
     case 5:
     default:
-      quick_sort(celebrities);
+      quicksort(celebrities);
       return 0;
   }  
 }
