@@ -47,3 +47,6 @@ bool operator <(const celebrity & c1, const celebrity & c2){
   return c1.name < c2.name;
 }
 
+bool operator <=(const celebrity & c1, const celebrity & c2){
+	 return !(c1 < c2);
+ }
