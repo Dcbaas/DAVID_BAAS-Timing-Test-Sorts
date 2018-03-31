@@ -11,10 +11,10 @@ int main(int argc, char** argv){
 
  std::vector<celebrity> celebrities;
 
-//  for(int i{0}; i < elements;++i){
-//    celebrity c = celebrityBuilder();
-//    celebrities.push_back(c);
-//  }
+  for(int i{0}; i < elements;++i){
+    celebrity c = celebrityBuilder();
+    celebrities.push_back(c);
+  }
 
   switch(sortType){
     case 1:
