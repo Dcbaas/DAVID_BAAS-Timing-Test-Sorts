@@ -38,7 +38,7 @@ bool celebrity::getMet() const{
   return met;
 }
 
-bool operator <(const celebrity & c1, const celebrity & c2){
+bool operator<(const celebrity & c1, const celebrity & c2){
   if(c1.desperation != c2.desperation)
     return c1.desperation < c2.desperation;
   else if(c1.met != c2.met)
@@ -47,6 +47,6 @@ bool operator <(const celebrity & c1, const celebrity & c2){
   return c1.name < c2.name;
 }
 
-bool operator <=(const celebrity & c1, const celebrity & c2){
+bool operator<=(const celebrity & c1, const celebrity & c2){
 	 return !(c1 < c2);
  }
