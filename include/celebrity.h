@@ -1,5 +1,5 @@
 #ifndef CELEBRITY_H
-#define CELEBRITY_h
+#define CELEBRITY_H
 #include <string>
 /******************************************************************************
  * The celebrity class creates a celebrity object that tracks a celebrities 
