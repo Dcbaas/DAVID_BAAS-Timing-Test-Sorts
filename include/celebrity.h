@@ -88,7 +88,7 @@ public:
    * 
    * Param: other Celebrity being compared.
    ***************************************************************************/
-  bool & operator <(celebrity &other);
+  friend bool  operator <(const celebrity & c1,const celebrity & c2);
 
 private:
   

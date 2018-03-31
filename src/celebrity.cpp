@@ -38,12 +38,12 @@ bool celebrity::getMet() const{
   return met;
 }
 
-bool & celebrity::operator <(celebrity &other){
-  if(this->desperation != other->desperation)
-    return this->desperation < other.desperation;
-  else if(this->met != other.met)
-    return !this->met;
+bool operator <(const celebrity & c1, const celebrity & c2){
+  if(c1.desperation != c2.desperation)
+    return c1.desperation < c2.desperation;
+  else if(c1.met != c2.met)
+    return !c1.met;
 
-  return this->name < other.name;
+  return c1.name < c2.name;
 }
 

@@ -1,12 +1,13 @@
 #include "sorts.h"
 #include "celebrity.h"
 #include <vector>
+#include <string>
 
 celebrity celebrityBuilder();
 
 int main(int argc, char** argv){
-  int sortType{argv[0]};
-  int elements{argv[1]};
+  int sortType{std::stoi(argv[0])};
+  int elements{std::stoi(argv[1])};
 
  std::vector<celebrity> celebrities;
 
