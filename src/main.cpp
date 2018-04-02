@@ -2,14 +2,15 @@
 #include "celebrity.h"
 #include <vector>
 #include <string>
+#include <algorithm>
 #include <cstdlib>
 
-celebrity & celebrityBuilder();
-std::string & strBuilder();
+celebrity  celebrityBuilder();
+std::string  strBuilder();
 
 int main(int argc, char** argv){
-  int sortType{std::stoi(argv[0])};
-  int elements{std::stoi(argv[1])};
+  int sortType{std::stoi(argv[1])};
+  int elements{std::stoi(argv[2])};
 
  std::vector<celebrity> celebrities;
 
@@ -36,13 +37,12 @@ int main(int argc, char** argv){
       return 0;
   
     case 5:
-    default:
       quicksort(celebrities);
       return 0;
   }  
 }
 
-celebrity & celebrityBuilder(){
+celebrity  celebrityBuilder(){
  std::string name = strBuilder();
  int desperation = rand() % 10;
  std::string field = strBuilder();
@@ -52,7 +52,7 @@ celebrity & celebrityBuilder(){
  return c;
 }
 
-std::string & strBuilder(){
+std::string  strBuilder(){
   char ch{'a'};
   std::string str;
   for(int i{0}; i < 8; ++i){
