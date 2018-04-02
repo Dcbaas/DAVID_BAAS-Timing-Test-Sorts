@@ -13,6 +13,8 @@
 class celebrity{
 
 public:
+
+  celebrity();
  /*****************************************************************************
   * The constructor initializes all of the instance variables.
   *

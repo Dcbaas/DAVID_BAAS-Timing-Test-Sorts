@@ -1,6 +1,7 @@
 #include <string>
 #include "celebrity.h"
 
+celebrity::celebrity(){}
 
 celebrity::celebrity(std::string &name, int &desperation, std::string &field, bool &met):
 name(name), desperation(desperation), field(field), met(met){}
