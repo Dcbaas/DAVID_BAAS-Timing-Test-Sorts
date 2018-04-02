@@ -1,6 +1,8 @@
 #include <string>
 #include "celebrity.h"
 
+
+//For documentaton on celebrity class, see celebrity.h
 celebrity::celebrity(){}
 
 celebrity::celebrity(std::string &name, int &desperation, std::string &field, bool &met):
