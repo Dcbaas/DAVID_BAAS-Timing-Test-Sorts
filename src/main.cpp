@@ -2,8 +2,10 @@
 #include "celebrity.h"
 #include <vector>
 #include <string>
+#include <cstdlib>
 
 celebrity & celebrityBuilder();
+std::string & strBuilder();
 
 int main(int argc, char** argv){
   int sortType{std::stoi(argv[0])};
@@ -41,11 +43,20 @@ int main(int argc, char** argv){
 }
 
 celebrity & celebrityBuilder(){
- std::string name = "Lindsey Stirling";
- int desperation = 10;
- std::string field = "Music";
- bool met = false;
+ std::string name = strBuilder();
+ int desperation = rand() % 10;
+ std::string field = strBuilder();
+ bool met = rand() % 2;
 
  celebrity c(name,desperation,field,met);
  return c;
+}
+
+std::string & strBuilder(){
+  char ch{'a'};
+  std::string str;
+  for(int i{0}; i < 8; ++i){
+    ch = rand() % 62 + 65;
+  }
+  return str;
 }
