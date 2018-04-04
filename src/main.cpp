@@ -71,9 +71,10 @@ celebrity  celebrityBuilder(){
 
 std::string  strBuilder(){
   char ch{'a'};
-  std::string str;
+  std::string str{""};
   for(int i{0}; i < 8; ++i){
     ch = rand() % 62 + 65;
+    str += ch;
   }
   return str;
 }

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+OUTPUT_FILE="output.csv"
+echo > $OUTPUT_FILE
+for i in $(seq 0 5)
+do
+	(time ./a.out 2 100000)
+done
