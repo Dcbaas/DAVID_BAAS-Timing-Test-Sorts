@@ -1,9 +1,9 @@
 #!/bin/bash
 
-OUTPUT_FILE="MergeSortFor1000000.txt"
+OUTPUT_FILE="Quick-Sort_For_1,000,000.txt"
 echo > $OUTPUT_FILE
 for i in $(seq 0 4)
 do
 
-	(time ./a.out 4 1000000) >> $OUTPUT_FILE 2>&1
+	(time ./a.out 5 1000000) >> $OUTPUT_FILE 2>&1
 done
